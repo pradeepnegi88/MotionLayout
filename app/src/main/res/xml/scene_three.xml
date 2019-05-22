@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+        xmlns:motion="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Transition
+            motion:constraintSetStart="@+id/start"
+            motion:constraintSetEnd="@+id/end"
+            motion:duration="6000"
+            motion:autoTransition="animateToEnd"
+            motion:motionInterpolator="bounce"    >
+        <OnSwipe
+                motion:touchAnchorId="@+id/middleCard"
+                motion:touchAnchorSide="right"
+                motion:dragDirection="dragRight"
+        />
+
+        <KeyFrameSet>
+
+            <KeyAttribute
+                    motion:framePosition="50"
+                    motion:motionTarget="@id/middleCard"
+                    android:scaleX="2"
+                    android:rotation="30"
+
+                    android:scaleY="2"
+                    android:elevation="4dp"
+                  />
+
+
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+                android:id="@+id/middleCard">
+            <Layout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent"
+                    motion:layout_constraintTop_toTopOf="parent" motion:layout_constraintBottom_toBottomOf="parent"             />
+            <Transform
+                    android:elevation="8dp"
+                    android:translationY="100dp"
+                    android:translationX="100dp"
+
+
+            />
+            <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#9889FF"/>
+
+        </Constraint>
+
+        <Constraint
+                android:id="@+id/firstCard">
+            <Layout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent"
+                    motion:layout_constraintTop_toTopOf="parent" motion:layout_constraintBottom_toBottomOf="parent"           />
+            <Transform
+                    android:translationY="100dp"
+                    android:translationX="100dp"
+            />
+            <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#9889FF"/>
+
+        </Constraint>
+
+
+        <Constraint
+                android:id="@+id/secondCard">
+            <Layout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent"
+                    motion:layout_constraintTop_toTopOf="parent" motion:layout_constraintBottom_toBottomOf="parent"           />
+            <Transform
+                    android:translationY="100dp"
+                    android:translationX="100dp"
+            />
+            <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#9889FF"/>
+
+        </Constraint>
+        <Constraint
+                android:id="@+id/thirdCard">
+            <Layout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent"
+                    motion:layout_constraintTop_toTopOf="parent" motion:layout_constraintBottom_toBottomOf="parent"           />
+            <Transform
+                    android:translationY="100dp"
+                    android:translationX="100dp"
+            />
+            <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#9889FF"/>
+
+        </Constraint>
+        <Constraint
+                android:id="@+id/fourCard">
+            <Layout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent"
+                    motion:layout_constraintTop_toTopOf="parent" motion:layout_constraintBottom_toBottomOf="parent"           />
+            <Transform
+                    android:translationY="100dp"
+                    android:translationX="100dp"
+            />
+            <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#9889FF"/>
+
+        </Constraint>
+        <Constraint
+                android:id="@+id/fiveCard">
+            <Layout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent"
+                    motion:layout_constraintTop_toTopOf="parent" motion:layout_constraintBottom_toBottomOf="parent"           />
+            <Transform
+                    android:translationY="100dp"
+                    android:translationX="100dp"
+            />
+            <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#9889FF"/>
+
+        </Constraint>
+        <Constraint
+                android:id="@+id/sixCard">
+            <Layout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent"
+                    motion:layout_constraintTop_toTopOf="parent" motion:layout_constraintBottom_toBottomOf="parent"           />
+            <Transform
+                    android:translationY="100dp"
+                    android:translationX="100dp"
+            />
+            <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#9889FF"/>
+
+        </Constraint>
+
+        <Constraint
+                android:id="@+id/sevenCard">
+            <Layout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent"
+                    motion:layout_constraintTop_toTopOf="parent" motion:layout_constraintBottom_toBottomOf="parent"           />
+            <Transform
+                    android:translationY="100dp"
+                    android:translationX="100dp"
+            />
+            <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#9889FF"/>
+
+        </Constraint>
+        <Constraint
+                android:id="@+id/eightCard">
+            <Layout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent"
+                    motion:layout_constraintTop_toTopOf="parent" motion:layout_constraintBottom_toBottomOf="parent"           />
+            <Transform
+                    android:translationY="100dp"
+                    android:translationX="100dp"
+            />
+            <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#9889FF"/>
+
+        </Constraint>
+        <!--        <Constraint-->
+        <!--                android:id="@+id/nineCard">-->
+        <!--            <Layout-->
+        <!--                    android:layout_width="100dp"-->
+        <!--                    android:layout_height="100dp"-->
+        <!--                    motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent"-->
+        <!--                    motion:layout_constraintTop_toTopOf="parent" motion:layout_constraintBottom_toBottomOf="parent"           />-->
+        <!--            <Transform-->
+        <!--                    android:translationY="100dp"-->
+        <!--                    android:translationX="100dp"-->
+        <!--            />-->
+        <!--            <CustomAttribute-->
+        <!--                    motion:attributeName="backgroundColor"-->
+        <!--                    motion:customColorValue="#9889FF"/>-->
+
+        <!--        </Constraint>-->
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+                android:id="@+id/middleCard">
+            <Layout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+            />
+            <Transform
+                    android:rotation="30"
+                    android:elevation="8dp"
+                    android:translationY="148dp"
+                    android:translationX="124dp"
+            />
+            <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#B3E5FC"/>
+        </Constraint>
+        <Constraint
+                android:id="@+id/firstCard">
+            <Layout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+            />
+            <Transform
+                    android:translationY="100dp"
+                    android:translationX="100dp"
+            />
+            <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#81D4FA"/>
+        </Constraint>
+        <Constraint
+                android:id="@+id/secondCard">
+            <Layout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+            />
+            <Transform
+                    android:rotation="60"
+                    android:elevation="16dp"
+                    android:translationY="200dp"
+                    android:translationX="124dp"
+            />
+            <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#4FC3F7"/>
+        </Constraint>
+
+        <Constraint
+                android:id="@+id/thirdCard">
+            <Layout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+            />
+            <Transform
+                    android:rotation="90"
+                    android:elevation="32dp"
+                    android:translationY="248dp"
+                    android:translationX="100dp"
+            />
+            <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#29B6F6"/>
+        </Constraint>
+        <Constraint
+                android:id="@+id/fourCard">
+            <Layout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+            />
+            <Transform
+                    android:rotation="120"
+                    android:elevation="40dp"
+                    android:translationY="274dp"
+                    android:translationX="56dp"
+            />
+            <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#03A9F4"/>
+        </Constraint>
+        <Constraint
+                android:id="@+id/fiveCard">
+            <Layout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+            />
+            <Transform
+                    android:rotation="150"
+                    android:elevation="48dp"
+                    android:translationY="270dp"
+                    android:translationX="10dp"
+            />
+            <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#039BE5"/>
+        </Constraint>
+        <Constraint
+                android:id="@+id/sixCard">
+            <Layout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+            />
+            <Transform
+                    android:rotation="180"
+                    android:elevation="52dp"
+                    android:translationY="248dp"
+                    android:translationX="0dp"
+
+            />
+            <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#0288D1"/>
+        </Constraint>
+        <Constraint
+                android:id="@+id/sevenCard">
+            <Layout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+            />
+            <Transform
+                    android:rotation="210"
+                    android:elevation="56dp"
+                    android:translationX="-40dp"
+
+                    android:translationY="200dp"
+            />
+            <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#0277BD"/>
+        </Constraint>
+        <Constraint
+                android:id="@+id/eightCard">
+            <Layout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+            />
+            <Transform
+                    android:rotation="240"
+                    android:elevation="60dp"
+                    android:translationX="-40dp"
+
+                    android:translationY="148dp"
+            />
+            <CustomAttribute
+                    motion:attributeName="backgroundColor"
+                    motion:customColorValue="#01579B"/>
+        </Constraint>
+        <!--        <Constraint-->
+        <!--                android:id="@+id/nineCard">-->
+        <!--            <Layout-->
+        <!--                    android:layout_width="100dp"-->
+        <!--                    android:layout_height="100dp"-->
+        <!--            />-->
+        <!--            <Transform-->
+        <!--                    android:rotation="270"-->
+        <!--                    android:elevation="64dp"-->
+        <!--                    android:translationX="0dp"-->
+
+        <!--                    android:translationY="100dp"-->
+        <!--            />-->
+        <!--            <CustomAttribute-->
+        <!--                    motion:attributeName="backgroundColor"-->
+        <!--                    motion:customColorValue="#9999FF"/>-->
+        <!--        </Constraint>-->
+    </ConstraintSet>
+
+</MotionScene>

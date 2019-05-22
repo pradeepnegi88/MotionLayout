@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+        xmlns:motion="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Transition
+            motion:constraintSetStart="@+id/start"
+            motion:constraintSetEnd="@+id/end"
+    >
+        <OnSwipe
+                motion:touchAnchorId="@+id/flow"
+                motion:touchAnchorSide="bottom"
+                motion:dragDirection="dragUp"
+        />
+        <KeyFrameSet>
+            <KeyPosition
+                    motion:keyPositionType="parentRelative"
+                    motion:percentX="0.25"
+                    motion:framePosition="50"
+                    motion:motionTarget="@+id/text"/>
+        </KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/start">
+
+        <Constraint
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                motion:constraint_referenced_ids="textView,button,button3,button2"
+                android:layout_marginBottom="8dp"
+                motion:flow_wrapMode="chain"
+                motion:flow_maxElementsWrap="2"
+                motion:flow_horizontalGap="20dp"
+                android:id="@+id/flow"
+                motion:flow_verticalGap="20dp"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="8dp" motion:layout_constraintTop_toTopOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                motion:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"
+                motion:layout_constraintVertical_bias="1.0"
+        >
+            <CustomAttribute motion:attributeName="backgroundColor"
+                             motion:customColorValue="#909000"/>
+        </Constraint>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+                android:id="@+id/button3"
+                android:visibility="gone"/>
+        <Constraint
+                android:id="@+id/button"
+                android:visibility="gone"/>
+        <Constraint
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                motion:constraint_referenced_ids="textView,button,button3,button2"
+                android:layout_marginBottom="8dp"
+                motion:flow_wrapMode="chain"
+                motion:flow_maxElementsWrap="2"
+                motion:flow_horizontalGap="20dp"
+                android:id="@+id/flow"
+                motion:flow_verticalGap="20dp"
+                motion:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="8dp" motion:layout_constraintTop_toTopOf="parent"
+                motion:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                motion:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"
+                motion:layout_constraintVertical_bias="0.0"
+        >
+            <CustomAttribute motion:attributeName="backgroundColor"
+                             motion:customColorValue="#113673"/>
+        </Constraint>
+
+
+    </ConstraintSet>
+
+</MotionScene>
